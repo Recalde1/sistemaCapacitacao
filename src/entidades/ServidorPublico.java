@@ -15,6 +15,8 @@ public class ServidorPublico {
         private String cpf;
         private String lotacao;
         private String email;
+        private int HorasExtras;
+
 
         public String getEmail() {
                 return email;
@@ -126,5 +128,11 @@ public class ServidorPublico {
 
         public void setCpf(String cpf) {
                 this.cpf = cpf;
+        }
+
+
+        public double calcularSalarioTotal(){
+                double salario = this.salario + HorasExtras;
+                return (salario);
         }
 }
