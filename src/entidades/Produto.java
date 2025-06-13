@@ -5,6 +5,7 @@ public class Produto {
     private int qntd;
     private double valorTotal;
 
+
     public double getValorTotal() {
         return valorTotal;
     }
