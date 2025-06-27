@@ -48,4 +48,5 @@ public class SalarioFuncionario {
         this.salarioBruto = (porcentagem/ 100 * this.salarioBruto) + this.salarioBruto;
 
     }
+
 }

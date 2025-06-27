@@ -18,6 +18,18 @@ public class ServidorPublico {
         private int HorasExtras;
 
 
+        public ServidorPublico(){}
+
+        public ServidorPublico(int matricula, String nome, String orgao, String cargo, String email, String lotacao, double salario) {
+                this.matricula = matricula;
+                this.nome = nome;
+                this.orgao = orgao;
+                this.cargo = cargo;
+                this.email = email;
+                this.lotacao = lotacao;
+                this.salario = salario;
+        }
+
         public String getEmail() {
                 return email;
         }
@@ -134,5 +146,17 @@ public class ServidorPublico {
         public double calcularSalarioTotal(){
                 double salario = this.salario + HorasExtras;
                 return (salario);
+        }
+
+        @Override
+        public String toString() {
+                return "ServidorPublico{" +
+                        "matricula=" + matricula +
+                        ", nome='" + nome + '\'' +
+                        ", orgao='" + orgao + '\'' +
+                        ", salario=" + salario +
+                        ", cargo='" + cargo + '\'' +
+                        ", lotacao='" + lotacao + '\'' +
+                        '}';
         }
 }
